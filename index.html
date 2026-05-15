@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kişisel portföy web sitesi - Projeler, yazılar ve hakkımda bölümleri">
+    <meta name="author" content="Sizin Adınız">
+    <title>Kişisel Portföy</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Anasayfa</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Hakkımda</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portföy</a></li>
+                <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ölçeklenebilir Altyapı İnşa Ediyorum</h1>
+                <p class="hero-subtitle">DevOps Engineer & Cloud Architect</p>
+                <p class="hero-description">
+                    Bulut ortamında güvenilir, hızlı ve otomatikleştirilmiş altyapılar tasarlıyorum. 
+                    Kubernetes, Docker, CI/CD pipeline'ları ve modern DevOps araçlarıyla uzmanlaşmış.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Projelerimi Gör</a>
+                    <a href="#contact" class="btn btn-secondary">İletişim</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/TalhaKara-YazılımDeparmanBaşkanı.jpg" alt="Profil Resmi" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Merhaba! Ben, Frontend geliştirme ve UI/UX tasarımında uzmanlaşmış bir profesyonel geliştiriciyim.
+                        5+ yıllık deneyimle HTML, CSS, JavaScript ve modern framework'lerle çalışıyorum.
+                    </p>
+                    <p>
+                        Kullanıcı deneyiminin merkez alındığı, responsive ve erişilebilir web uygulamaları tasarlamak 
+                        ve geliştirmek benim specialitem. Detaylara dikkat etmek ve yüksek kaliteli çıktı sağlamak konusunda 
+                        titizim.
+                    </p>
+                    <p>
+                        Öğrenmeye meraklı birisi olarak, en yeni teknolojileri ve best practices'leri takip ediyorum.
+                        Kendi projelerim üzerinde çalışmayı ve open source kütüphanelerine katkıda bulunmayı seviyorum.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="assets/cv.pdf" class="btn btn-primary" download>CV İndir</a>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <h3>Teknolojiler</h3>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portföy</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobil</button>
+                <button class="filter-btn" data-filter="design">Tasarım</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section Preview -->
+    <section id="blog" class="blog-preview">
+        <div class="container">
+            <h2 class="section-title">Son Yazılar</h2>
+            
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be loaded here by JavaScript -->
+            </div>
+            
+            <div class="blog-buttons">
+                <a href="blog.html" class="btn btn-primary">Tüm Yazıları Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <p class="contact-subtitle">Soru veya öneriniz mi var? Benimle iletişime geçin!</p>
+            
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-posta" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mesaj" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:your@email.com">your@email.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Telefon</h3>
+                        <p><a href="tel:+905551234567">+90 555 123 4567</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Adres</h3>
+                        <p>İstanbul, Türkiye</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kişisel Portföy. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="#home">Anasayfa</a>
+                    <a href="#about">Hakkımda</a>
+                    <a href="#portfolio">Portföy</a>
+                    <a href="#blog">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

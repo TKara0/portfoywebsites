@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "CSS Grid ile Responsive Layouts Oluşturma",
+    "excerpt": "CSS Grid'in güçlü özelliklerini kullanarak responsive ve esnek mizanpajlar nasıl oluşturacağımızı öğrenelim.",
+    "content": "<h2>CSS Grid Nedir?</h2><p>CSS Grid, web tasarımcılara iki boyutlu mizanpajlar oluşturmak için güçlü araçlar sağlar. Satırlar ve sütunlarla elementleri yerleştirmek oldukça kolaydır.</p><h3>Grid Container ve Items</h3><p>Grid'i kullanmaya başlamak için bir container tanımlamanız gerekir. Container içindeki tüm doğrudan alt elementler grid items olur.</p><pre><code>display: grid;\ngrid-template-columns: repeat(3, 1fr);\ngrid-gap: 20px;</code></pre><h2>Pratik Örnekler</h2><p>Blog yazısının geri kalanında Grid'in farklı kullanım şekilleri ve responsive davranışları hakkında detaylı bilgiler bulacaksınız.</p>",
+    "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
+    "category": "CSS",
+    "author": "Ahmet Yılmaz",
+    "date": "2024-05-10",
+    "readTime": "5 dakika",
+    "tags": ["CSS", "Grid", "Responsive Design", "Frontend"]
+  },
+  {
+    "id": 2,
+    "title": "JavaScript ES6+ Özellikleri ve Modern Geliştirme",
+    "excerpt": "ES6 ve sonrası JavaScript sürümlerindeki yeni özellikleri keşfederek modern ve clean kod yazın.",
+    "content": "<h2>Arrow Functions</h2><p>Arrow functions, JavaScript'e kısa ve temiz yazım şekli getirmiştir. this binding ile ilgili sorunları çözer.</p><pre><code>const sum = (a, b) => a + b;\nconst multiply = (x, y) => { return x * y; };</code></pre><h2>Destructuring</h2><p>Destructuring, nesneler ve dizilerden değerleri çıkarmayı çok daha basit hale getirir.</p><h3>Nesnelerde Destructuring</h3><pre><code>const { name, email } = user;\nconst { firstName: first, lastName: last } = person;</code></pre><h2>Spread Operator</h2><p>Spread operator ile dizileri ve nesneleri kopyalamak veya birleştirmek kolay hale gelir.</p>",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=800&h=400&fit=crop",
+    "category": "JavaScript",
+    "author": "Ayşe Kaya",
+    "date": "2024-05-08",
+    "readTime": "8 dakika",
+    "tags": ["JavaScript", "ES6", "Modern", "Frontend"]
+  },
+  {
+    "id": 3,
+    "title": "React Hooks ve State Management",
+    "excerpt": "React Hooks kullanarak fonksiyonel bileşenlerde state ve side effects'leri nasıl yönetirsiniz?",
+    "content": "<h2>useState Hook</h2><p>useState, fonksiyonel bileşenlere state eklemek için kullanılan en temel hook'tur.</p><pre><code>const [count, setCount] = useState(0);\nconst [name, setName] = useState('');</code></pre><h2>useEffect Hook</h2><p>useEffect, API çağrıları, DOM manipülasyonları ve diğer side effects için kullanılır.</p><h3>useEffect Temizleme</h3><pre><code>useEffect(() => { return () => { // cleanup code }; }, [dependencies]);</code></pre><h2>Custom Hooks</h2><p>Kendi custom hooks'larınızı yazarak, component mantığını yeniden kullanılabilir hale getirin.</p>",
+    "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
+    "category": "React",
+    "author": "Mehmet Demir",
+    "date": "2024-05-05",
+    "readTime": "10 dakika",
+    "tags": ["React", "Hooks", "State Management", "Frontend"]
+  },
+  {
+    "id": 4,
+    "title": "Web Performance Optimization Teknikleri",
+    "excerpt": "Web sayfalarınızı hızlandırmanın en etkili yolları nelerdir? Performance optimization en iyi uygulamalarını öğrenin.",
+    "content": "<h2>Image Optimization</h2><p>Görseller genellikle web sayfalarının en büyük kısmını oluşturur. WebP formatı, lazy loading ve responsive images kullanarak performansı artırabilirsiniz.</p><h2>Code Splitting</h2><p>Büyük JavaScript bundle'larını daha küçük parçalara bölerek ilk yükleme süresini azaltın.</p><h2>Caching Stratejileri</h2><p>Browser cache, service worker'lar ve CDN kullanarak içeriği hızlı bir şekilde sunun.</p><h2>Lighthouse Kullanımı</h2><p>Google Lighthouse ile performans, SEO ve accessibility metriklerini ölçün ve iyileştiriniz.</p>",
+    "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
+    "category": "Performance",
+    "author": "Fatih Çelik",
+    "date": "2024-05-01",
+    "readTime": "12 dakika",
+    "tags": ["Performance", "Optimization", "Web", "Best Practices"]
+  },
+  {
+    "id": 5,
+    "title": "Web Accessibility (A11y) - Herkes İçin Web",
+    "excerpt": "Engelli kullanıcılar da dahil olmak üzere herkes için erişilebilir web sayfaları nasıl oluşturursunuz?",
+    "content": "<h2>Semantic HTML</h2><p>Doğru HTML elementlerini kullanarak screen reader'ların içeriği doğru şekilde okumasını sağlayın.</p><h2>ARIA Attributes</h2><p>ARIA (Accessible Rich Internet Applications) özelliklerini kullanarak complex widget'ların erişilebilirliğini artırın.</p><h2>Keyboard Navigation</h2><p>Tüm funktionaliteler keyboard ile erişilebilir olmalıdır. Tab order ve focus management önemlidir.</p><h2>Color Contrast</h2><p>Metinler ve arka plan arasında yeterli kontrast olmalıdır. WCAG standartlarına uyunuz.</p><h2>Testing Tools</h2><p>axe, WAVE ve diğer accessibility testing tools'larını kullanarak sayfanızı test edin.</p>",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=800&h=400&fit=crop",
+    "category": "Accessibility",
+    "author": "Zeynep Kara",
+    "date": "2024-04-28",
+    "readTime": "7 dakika",
+    "tags": ["Accessibility", "A11y", "WCAG", "Inclusive Design"]
+  }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog yazıları ve teknik makaleler">
+    <title>Blog - Kişisel Portföy</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html#home" class="nav-link" data-section="home">Anasayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-section="about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link" data-section="portfolio">Portföy</a></li>
+                <li><a href="blog.html" class="nav-link active" data-section="blog">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-section="contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Teknoloji, web geliştirme ve tasarım hakkında yazılar</p>
+        </div>
+    </section>
+
+    <div class="container blog-container">
+        <div class="blog-main">
+            <!-- Blog Post will be loaded here -->
+            <article class="blog-post" id="blogPost">
+                <!-- Post content loaded by JavaScript -->
+            </article>
+
+            <!-- Blog List (for /blog.html without id parameter) -->
+            <div id="blogListContainer">
+                <div class="blog-list" id="blogList">
+                    <!-- Blog posts list loaded by JavaScript -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <!-- Pagination buttons loaded by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Categories -->
+            <div class="sidebar-widget">
+                <h3>Kategoriler</h3>
+                <div class="categories" id="categoriesList">
+                    <!-- Categories loaded by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="sidebar-widget">
+                <h3>Son Yazılar</h3>
+                <div class="recent-posts" id="recentPosts">
+                    <!-- Recent posts loaded by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="sidebar-widget">
+                <h3>Ara</h3>
+                <input type="text" id="searchInput" placeholder="Yazı ara..." class="search-input">
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kişisel Portföy. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="index.html#home">Anasayfa</a>
+                    <a href="index.html#about">Hakkımda</a>
+                    <a href="index.html#portfolio">Portföy</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

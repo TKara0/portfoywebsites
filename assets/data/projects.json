@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "HTML5 & CSS3 ile Responsive Web Tasarımı",
+    "category": "Web",
+    "description": "Modern responsive web tasarımının temellerini öğrenin",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    "technologies": ["HTML5", "CSS3", "Responsive Design"],
+    "liveLink": "https://example.com/project1",
+    "githubLink": "https://github.com/example/project1"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript ile Etkileşimli Web Uygulamaları",
+    "category": "web",
+    "description": "Vanilla JavaScript ile dinamik uygulamalar geliştirin",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=300&fit=crop",
+    "technologies": ["JavaScript", "DOM", "API"],
+    "liveLink": "https://example.com/project2",
+    "githubLink": "https://github.com/example/project2"
+  },
+  {
+    "id": 3,
+    "title": "React ile SPA Uygulaması",
+    "category": "web",
+    "description": "React framework'ü ile tek sayfalı uygulamalar",
+    "image": "https://images.unsplash.com/photo-1517694712642-f4a0ae2b7367?w=500&h=300&fit=crop",
+    "technologies": ["React", "Redux", "Tailwind CSS"],
+    "liveLink": "https://example.com/project3",
+    "githubLink": "https://github.com/example/project3"
+  },
+  {
+    "id": 4,
+    "title": "Vue.js ile E-Commerce Sitesi",
+    "category": "web",
+    "description": "Vue.js kullanarak tam işlevsel e-commerce platformu",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=500&h=300&fit=crop",
+    "technologies": ["Vue.js", "Vuex", "Bootstrap"],
+    "liveLink": "https://example.com/project4",
+    "githubLink": "https://github.com/example/project4"
+  },
+  {
+    "id": 5,
+    "title": "Mobile App - React Native",
+    "category": "mobile",
+    "description": "Mobil uygulama geliştirme React Native ile",
+    "image": "https://images.unsplash.com/photo-1512941691920-25beb7ce3119?w=500&h=300&fit=crop",
+    "technologies": ["React Native", "Firebase", "Redux"],
+    "liveLink": null,
+    "githubLink": "https://github.com/example/mobileapp"
+  },
+  {
+    "id": 6,
+    "title": "UI/UX Design - Desktop App",
+    "category": "design",
+    "description": "Modern arayüz tasarımı ve kullanıcı deneyimi",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    "technologies": ["Figma", "UI Design", "Prototyping"],
+    "liveLink": null,
+    "githubLink": null
+  }
+]
